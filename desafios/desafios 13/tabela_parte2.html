@@ -5,26 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio da Segunda Tabela</title>
+    <style>
+        table{
+            border-collapse:collapse ;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        #A:hover{
+            background-color: rgb(41, 190, 41);
+            color: lightblue;
+        }
+        #B:hover{
+            background-color: rgb(41, 190, 41);
+            color: lightblue;
+        }
+        #E:hover{
+            background-color: rgb(41, 190, 41);
+            color: lightblue;
+        }
+        #N:hover{
+            background-color: rgb(41, 190, 41);
+            color: lightblue;
+        }
+        #P:hover{
+            background-color: darkblue;
+            color: darkred;
+        }
+    </style>
 </head>
 <body>
     <table>
         <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-        </tr>
-        <tr>
-            <td>E</td>
-            <td>F</td>
-            <td>G</td>
-            <td>H</td>
-        </tr><tr>
-            <td>I</td>
-            <td>J</td>
-            <td>L</td>
-            <td>M</td>
-            <td>N</td>
+             <td colspan="5" id="A">A</td>
+             <td rowspan="5" id="B">B</td>
+             
+         </tr>
+
+         <tr>
+             <td rowspan="6" id="E">E</td>
+         </tr>
+
+         <tr>
+              <td id="P">C</td>
+              <td id="P">D</td>
+              <td id="P">F</td>
+         </tr>
+
+          <tr>   
+             <td id="P">G</td>
+             <td id="P">H</td>
+             <td id="P">I</td>
+          </tr>
+
+          <tr>
+             <td id="P">J</td>
+             <td id="P">L</td>
+             <td id="P">M</td>
+          </tr>
+
+          <tr> 
+             <td colspan="5" id="N">N</td>
+          </tr>
+
         </tr>
     </table>
 </body>
